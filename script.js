@@ -39,7 +39,7 @@ function inserir_numero(btn_click){
 
 function operador(op){
     if (content.value == ''){
-        alert('imposible')
+        content.value = 'Erro de operação'
     }else if(content.value.indexOf(op.innerText) == '-1' && btn_op == ''){
         btn_op = op.innerText;
         content.value += btn_op
@@ -76,7 +76,7 @@ resultar[0].onclick = function(){
 
 function calcular(){
     if(content.value == ''){
-        return alert('Erro de operação')
+        content.value = 'Erro de operação'
     }
     else if (content.value != ''){
         content.value = num1
